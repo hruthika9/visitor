@@ -1,0 +1,28 @@
+<mat-expansion-panel hideToggle class="panel">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+       Provide Visitor Details
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div>
+        <mat-form-field>
+            <input type="text" matInput [(ngModel)]="v.name">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <input type="text" matInput [(ngModel)]="v.mobile">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <input type="text" matInput [(ngModel)]="v.company">
+        </mat-form-field>
+    </div>
+    <div>
+      
+        <button on-click="onSubmitClick()" mat-button color="primary">Submit</button>
+     
+  </div>
+  </mat-expansion-panel>
+  <app-showvisitor></app-showvisitor>

@@ -1,0 +1,28 @@
+<!--<div>
+    <span style="background-color: cyan">Registered visitors</span>
+    <div class="registered-visitors">
+        <div *ngFor="let v of visitors">
+            
+            <h1>{{v.name}}</h1>
+            <h2>{{v.mobile}}</h2>
+            <h3>{{v.company}}</h3>
+        </div>
+    </div>
+</div>-->
+<div>
+<span style="background-color: cyan">Registered visitors</span>
+<div *ngIf="visitors.length!=0;" class="container">
+    <mat-grid-list cols="4">
+    <div *ngFor="let v of visitors;" class="visitor-list">
+        <mat-grid-tile>
+<mat-card>
+<mat-card-header>
+    <mat-card-title>{{v.name}}</mat-card-title>
+    <mat-card-subtitle>Visitor</mat-card-subtitle>
+    </mat-card-header>
+        Mobile:{{v.mobile}}<br>Company:{{v.company}}
+</mat-card></mat-grid-tile>
+</div>
+</mat-grid-list>
+</div>
+</div>

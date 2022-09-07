@@ -1,0 +1,15 @@
+.registered-visitors{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.visitor-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+mat-card{
+    width:30vh;
+    height: 30vh;
+}
